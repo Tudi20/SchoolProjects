@@ -59,11 +59,13 @@ namespace _2_TombGyak
         static double GeometricAvg(int[] arr)
         {
             double product = 1;
+
             foreach (var item in arr)
             {
                 product *= item;
             }
             return Math.Pow(product, 1.0 / arr.Length);
+
         }
     }
 }
